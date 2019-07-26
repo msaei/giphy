@@ -4,7 +4,7 @@ const demo = document.querySelector("#demo");
 const fetchGif= () => {
   // to-do: replace the next line with *YOUR* API key - this one won't work.
   const apiKey = 'JZGFa61pSvjhGwVCRQK4BPvfa9O882X5';
-  fetch(`http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=hello&limit=1`)
+  fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=hello&limit=3`)
     .then((data) => {
       return data.json();
     })
